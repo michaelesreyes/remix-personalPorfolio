@@ -1,17 +1,23 @@
 import { Link } from 'react-router-dom'
-import { archivo, empleado, flag, home, me, www } from '../../Components/components'
+import { archivo, empleado, flag, home, me, www } from '../../Components/componets'
 
 export default function index () {
   return (
         <main>
-        <div class="navegador">
             <div class="navegador">
-                <Link class="nes-btn" to="/index"><img src={home} alt=""/></Link>
-                <a class="nes-btn" href="/src/Pages/AboutMe.html"><img src={empleado} alt=""/></a>
-                <a class="nes-btn" href="/src/Pages/Pojects.html"><img src={archivo} alt=""/></a>
-                <a class="nes-btn" href="/src/Pages/SocialMedia.html"><img src={www} alt=""/></a>
+                <Link class="nes-btn" to="/">
+                    <img src={home} alt=""/>
+                </Link>
+                <Link class="nes-btn" to="../About/about">
+                    <img src={empleado} alt=""/>
+                </Link>
+                <Link class="nes-btn" to="/Projects/projects">
+                    <img src={archivo} alt=""/>
+                </Link>
+                <Link class="nes-btn" to="../SocialMedia/socialMedia">
+                    <img src={www} alt=""/>
+                </Link>
             </div>
-        </div>
         <div class="container">
             <div class="colombia-flag">
                 <i><img src={flag} alt=""/></i>
