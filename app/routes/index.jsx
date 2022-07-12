@@ -1,32 +1,29 @@
-export default function Index() {
+import { Link } from 'react-router-dom'
+import { me } from './components'
+
+export default function Index () {
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>
-      <h1>Welcome to Remix</h1>
-      <ul>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/blog"
-            rel="noreferrer"
-          >
-            15m Quickstart Blog Tutorial
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/jokes"
-            rel="noreferrer"
-          >
-            Deep Dive Jokes App Tutorial
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://remix.run/docs" rel="noreferrer">
-            Remix Docs
-          </a>
-        </li>
-      </ul>
-    </div>
-  );
+    <main>
+        <div class="container">
+            <div class="circulo">
+                <img src={me} alt="Me"/>
+            </div>
+            <h1><i class="nes-icon trophy is-large"></i> Michael Reyes Personal Page <i class="nes-icon trophy is-large"></i> </h1>
+            <section class="nes-container with-title">
+                <h1 class="title">Principal Sections </h1>
+                <div class="buttoms">
+                    <Link class="nes-btn" to="/about/about">
+                      About me
+                    </Link>
+                    <Link class="nes-btn" to="/projects/index">
+                      Projects
+                    </Link>
+                    <Link class="nes-btn" to="/socialmedia/index">
+                      Social Media
+                    </Link>
+                </div>
+            </section>
+        </div>
+    </main>
+  )
 }
