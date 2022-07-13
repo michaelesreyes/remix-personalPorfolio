@@ -15,7 +15,7 @@ import projectsStyles from '~/Styles/projectsStyles.css'
 
 export const meta = () => ({
   charset: 'utf-8',
-  title: 'New Remix App',
+  title: 'Michael Porfolio',
   viewport: 'width=device-width,initial-scale=1'
 })
 
@@ -48,7 +48,7 @@ export const links = () => ([
 
 export default function App () {
   return (
-    <html lang="en">
+    <html lang="es">
       <head>
         <Meta />
         <Links />
